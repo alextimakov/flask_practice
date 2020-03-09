@@ -22,7 +22,7 @@ setup(
     install_requires=['flask', 'requests', 'flake8', 'python-dotenv'],  # Optional
     entry_points={  # Optional
         'console_scripts': [
-            'flask_practice=flask_practice:app',
+            'flask_practice=flask_practice:sample_app',
         ],
     }
 )
