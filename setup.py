@@ -18,8 +18,10 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),  # Required
+    include_package_data=True,
+    zip_safe=False,
     python_requires='>=3.5, <4',  # Required
-    install_requires=['flask', 'requests', 'flake8', 'python-dotenv'],  # Optional
+    install_requires=['flask', 'requests', 'flake8', 'python-dotenv', 'pytest', 'coverage'],  # Optional
     entry_points={  # Optional
         'console_scripts': [
             'flask_practice=flask_practice:sample_app',
